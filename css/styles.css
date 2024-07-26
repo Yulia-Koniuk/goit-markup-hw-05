@@ -494,8 +494,8 @@ h1 {
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer-left {
@@ -525,13 +525,14 @@ h1 {
     margin: 0;
 }
 
-.footer-right {
+.footer-center {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    margin-right: 80px;
 }
 
-.footer-social-text {
+.footer-social-text,
+.footer-subscr-text {
     font-weight: 500;
     color: #FFFFFF;
     padding-bottom: 16px;
@@ -566,3 +567,57 @@ h1 {
 .footer-social-link:focus {
     background-color: #31D0AA;
 }
+
+.footer-subscr-form {
+    display: flex;
+    gap: 0px;
+}
+
+.footer-subscr-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+    margin-right: 24px;
+}
+
+.footer-subscr-input::placeholder {
+    color: #ffffff;
+}
+
+.footer-subscr-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscr-button:hover,
+.footer-subscr-button:focus {
+    background-color: #404BBF;
+}
+
+.footer-subscr-icon {
+    margin-left: 16px;
+    fill: #ffffff;
+}
+
